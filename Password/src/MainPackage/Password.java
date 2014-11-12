@@ -40,13 +40,13 @@ public class Password extends JPanel implements ActionListener {
 		helpButton.setActionCommand(HELP);
 		helpButton.addActionListener(this);
 	}
-	//---------------------------------------------------------------------------------------------------------------------
+	//----------------------------------------------------------------------------------------------------------------------
 	protected JComponent createButtonPanel() {
 		JPanel p = new JPanel(new GridLayout(0, 1));
 
 		return p;
 	}
-	//---------------------------------------------------------------------------------------------------------------------
+	//----------------------------------------------------------------------------------------------------------------------
 	public void actionPerformed(ActionEvent e) {
 		String cmd = e.getActionCommand();
 
@@ -75,7 +75,7 @@ public class Password extends JPanel implements ActionListener {
 									+ "the components section of The Java Tutorial.");
 		}
 	}
-	//---------------------------------------------------------------------------------------------------------------------
+	//----------------------------------------------------------------------------------------------------------------------
 	private static boolean isPasswordCorrect(char[] input) {
 		boolean isCorrect = true;
 		char[] correctPassword = { 'b', 'u', 'g', 'a', 'b', 'o', 'o' };
@@ -94,7 +94,7 @@ public class Password extends JPanel implements ActionListener {
 	protected void resetFocus() {
 		passwordField.requestFocusInWindow();
 	}
-	//---------------------------------------------------------------------------------------------------------------------
+	//----------------------------------------------------------------------------------------------------------------------
 	private static void createAndShowGUI() {
 		JFrame frame = new JFrame("Password");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -110,7 +110,7 @@ public class Password extends JPanel implements ActionListener {
 		frame.pack();
 		frame.setVisible(true);
 	}
-	//---------------------------------------------------------------------------------------------------------------------
+	//----------------------------------------------------------------------------------------------------------------------
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
