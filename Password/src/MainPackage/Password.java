@@ -54,10 +54,10 @@ public class Password extends JPanel implements ActionListener {
 			char[] input = passwordField.getPassword();
 			if (isPasswordCorrect(input)) {
 				JOptionPane.showMessageDialog(controllingFrame,
-						"Success! You typed the right password.");
+						"Access Granted");
 			} else {
 				JOptionPane.showMessageDialog(controllingFrame,
-						"Invalid password. Try again.", "Error Message",
+						"Invalid password", "Error Message",
 						JOptionPane.ERROR_MESSAGE);
 			}
 
